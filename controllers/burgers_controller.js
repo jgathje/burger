@@ -29,17 +29,6 @@ router.put("/api/burgers/:id", function (req, res) {
     });
 });
 
-router.put("/api/burger/:id", function (req, res){
-    burger.digest([req.params.id], function(result){
-        if (result.changedRows === 0) {
-            return res.status(404).end();
-        }
-        else {
-            res.status(200).end();
-        }
-    })
-})
-
 router.delete("/api/burgers/:id", function (req, res) {
     burger.delete([req.params.id], function (result) {
         if (result.affectedRows == 0) {

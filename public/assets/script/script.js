@@ -31,8 +31,8 @@ $(function () {
         event.preventDefault();
         var id = $(this).data("id");
         console.log("data: " + id)
-        $.ajax("/api/burger/" + id, {
-            type: "PUT"
+        $.ajax("/api/burgers/" + id, {
+            type: "DELETE"
         }).then(
             function () {
                 console.log("MMMMM");

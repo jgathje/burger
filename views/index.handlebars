@@ -35,7 +35,7 @@
         <div class="col-md-2"></div>
         <div class="col-md-5" id="devoured">
             <h4>Devoured burgers!</h4>
-            {{#each burgers}} {{#if devoured}}{{#unless digest}}
+            {{#each burgers}} {{#if devoured}}
             <div class="row" id="devouredBurgers">
                 <div class="col-md-8">{{burger_name}}</div>
                 <div class="col-md-4">
@@ -44,7 +44,7 @@
                     </button>
                 </div>
             </div>
-            {{/unless}} {{/if}} {{/each}}
+            {{/if}} {{/each}}
         </div>
     </div>
 </div>

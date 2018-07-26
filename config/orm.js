@@ -11,7 +11,7 @@ var orm = {
     },
     sumDigest: function (cb) {
         var queryString = "SELECT SUM(digest) AS Sum FROM burgers";
-        connection.query(queryString, function (err,data){
+        connection.query(queryString, function (err, data) {
             if (err) throw err;
             console.log(data);
             cb(data);
@@ -33,18 +33,9 @@ var orm = {
             cb(data);
         })
     },
-    digestOne: function (id, cb){
-        var queryString = "UPDATE burgers SET digest = 1 WHERE id = ?"
-        connection.query(queryString, [id], function (err, data){
-            if (err) throw err;
-            console.log(data);
-            cb(data);
-        })
-    },
-
     deleteOne: function (id, cb) {
         var queryString = "DELETE FROM burgers WHERE id = ?"
-        connection.query(queryString, [id], function(err, data){
+        connection.query(queryString, [id], function (err, data) {
             if (err) throw err;
             console.log(data);
             cb(data);
