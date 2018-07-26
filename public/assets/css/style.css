@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(177, 51, 51);
+    text-align: center;
+    background-image: url(../images/burgers.gif);
+    font-family: 'Permanent Marker', cursive;
+}
+
+#addburger {
+    background-color: darkgreen;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 150px 150px 150px 150px;
+
+}
+
+#devoured {
+    background-color: white;
+    border-radius: 50px 50px 50px 50px;
+
+}
+
+#uneaten {
+    background-color: rgb(49, 49, 148);
+    border-radius: 50px 50px 50px 50px;
+    font-weight: bold;
+
+}
+
+#uneatenBurgers, #devouredBurgers{
+    padding: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: grey;
+    text-align: center;
+    border-radius: 50px 50px 50px 50px;
+
+}
+
+#button {
+    background-color: white;
+    border-radius: 150px 150px 150px 150px;
+
+}
+
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#buttonimg {
+    height: 20px;
+    width: auto;
+    margin-bottom: 2px;
+}
