@@ -9,7 +9,9 @@
                     <input type="text" id="ca" name="name" required>
                     <p id="val"></p>
                 </div>
-                <button type="submit" id="button">Add Burger! <img id="buttonimg" src="assets/images/burger.png"></button>
+                <button type="submit" id="button">Add Burger!
+                    <img id="buttonimg" src="assets/images/burger.png">
+                </button>
             </form>
         </div>
     </div>
@@ -22,7 +24,9 @@
             <div class="row" id="uneatenBurgers">
                 <div class="col-md-8">{{burger_name}}</div>
                 <div class="col-md-4">
-                    <button type="submit" class="devour" id="button" data-id="{{id}}">Devour! <img id="buttonimg" src="/assets/images/eat.png"></button>
+                    <button type="submit" class="devour" id="button" data-id="{{id}}">Devour!
+                        <img id="buttonimg" src="/assets/images/eat.png">
+                    </button>
                 </div>
             </div>
             {{/unless}} {{/each}}
@@ -31,14 +35,16 @@
         <div class="col-md-2"></div>
         <div class="col-md-5" id="devoured">
             <h4>Devoured burgers!</h4>
-            {{#each burgers}} {{#if devoured}}
+            {{#each burgers}} {{#if devoured}}{{#unless digest}}
             <div class="row" id="devouredBurgers">
                 <div class="col-md-8">{{burger_name}}</div>
                 <div class="col-md-4">
-                    <button type="submit" class="digest" id="button" data-id="{{id}}">Digest! <img id="buttonimg" src="/assets/images/poo.png"></button>
+                    <button type="submit" class="digest" id="button" data-id="{{id}}">Digest!
+                        <img id="buttonimg" src="/assets/images/poo.png">
+                    </button>
                 </div>
             </div>
-            {{/if}} {{/each}}
+            {{/unless}} {{/if}} {{/each}}
         </div>
     </div>
 </div>

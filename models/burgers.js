@@ -17,8 +17,18 @@ var burger = {
             cb(res);
         })
     },
+    digest: function(id, cb){
+        orm.digestOne(id, function (res){
+            cb(res)
+        })
+    },
     delete: function (id, cb) {
         orm.deleteOne(id, function (res) {
+            cb(res);
+        })
+    },
+    sum: function (cb) {
+        orm.sumDigest(function(res){
             cb(res);
         })
     }
