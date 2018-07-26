@@ -11,19 +11,15 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     border-radius: 150px 150px 150px 150px;
-
+    border-style: groove;
 }
 
-#devoured {
-    background-color: white;
-    border-radius: 50px 50px 50px 50px;
-
+#ca {
+    border-radius: 0px;
 }
 
-#uneaten {
-    background-color: rgb(49, 49, 148);
-    border-radius: 50px 50px 50px 50px;
-    font-weight: bold;
+#devoured, #uneaten {
+    background-color: transparent;
 
 }
 
@@ -34,19 +30,23 @@ body {
     margin-bottom: 20px;
     background-color: grey;
     text-align: center;
-    border-radius: 50px 50px 50px 50px;
-
+    border-radius: 30px 30px 50px 50px;
+    border-style: groove;
 }
 
 #button {
     background-color: white;
     border-radius: 150px 150px 150px 150px;
-
+    border-style: groove;
 }
 
 h4 {
     margin-top: 10px;
     margin-bottom: 10px;
+    background-color: rgb(49, 49, 148);
+    border-radius: 50px 50px 30px 30px ;
+    padding: 20px;
+    border-style: groove;
 }
 
 #buttonimg {

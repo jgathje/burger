@@ -1,11 +1,9 @@
 $(function () {
     $(".create-form").on("submit", function (event) {
         event.preventDefault();
-
         var newBurger = {
-            burger_name: $("#ca").val().trim(),
+            burger_name: $("#ca").val().trim(), 
         };
-
         $.ajax("/api/burgers", {
             type: "POST",
             data: newBurger
@@ -37,7 +35,7 @@ $(function () {
             type: "DELETE"
         }).then(
             function () {
-                console.log("Nom Nom Nom");
+                console.log("MMMMM");
                 location.reload();
             }
         );

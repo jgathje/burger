@@ -23,9 +23,4 @@ var burger = {
         })
     }
 }
-
 module.exports = burger;
-
-// burger.all();
-// burger.create("JBC");
-// burger.update(true, 2);
